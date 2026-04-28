@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyFlow – Control financiero con IA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0A0A0A;
+            color: #fff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 2rem;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #00BFA6;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #00BFA6;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero h1 span {
+            color: #00BFA6;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #ccc;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+        }
+        .btn {
+            display: inline-block;
+            background: #00BFA6;
+            color: #0A0A0A;
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0.5rem;
+            transition: background 0.3s;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #00BFA6;
+            color: #00BFA6;
+        }
+        .btn-outline:hover {
+            background: #00BFA6;
+            color: #0A0A0A;
+        }
+        .btn:hover {
+            background: #008f7a;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            padding: 3rem 0;
+        }
+        .feature-card {
+            background: #1E1E1E;
+            padding: 1.5rem;
+            border-radius: 16px;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card img {
+            width: 60px;
+            margin-bottom: 1rem;
+        }
+        .feature-card h3 {
+            margin-bottom: 0.5rem;
+            color: #00BFA6;
+        }
+        .screenshots {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .screenshots img {
+            max-width: 30%;
+            border-radius: 20px;
+            margin: 1%;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        .pricing {
+            background: #1E1E1E;
+            padding: 3rem;
+            border-radius: 30px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00BFA6;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            border-top: 1px solid #333;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .screenshots img {
+                max-width: 80%;
+            }
+            .nav-links {
+                margin-top: 1rem;
+                width: 100%;
+                text-align: center;
+            }
+            .nav-links a {
+                margin: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">MoneyFlow</div>
+            <div class="nav-links">
+                <a href="#features">Características</a>
+                <a href="#pricing">Precios</a>
+                <a href="#download">Descargar</a>
+            </div>
+        </header>
+
+        <section class="hero">
+            <h1>Controla tus finanzas con <span>inteligencia artificial</span></h1>
+            <p>Presupuestos, categorías, gráficos de tendencia e informes profesionales. Todo sincronizado en la nube.</p>
+            <a href="#download" class="btn">Descargar gratis</a>
+            <a href="#pricing" class="btn btn-outline">Comprar Premium</a>
+        </section>
+
+        <section id="features" class="features">
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1040/1040253.png" alt="gráfico">
+                <h3>Gráficos visuales</h3>
+                <p>Distribución de gastos y evolución mensual con gráficos claros.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2990/2990928.png" alt="presupuesto">
+                <h3>Presupuestos</h3>
+                <p>Define límites por categoría y controla tu progreso.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3031/3031502.png" alt="exportar">
+                <h3>Exporta a CSV, Excel y PDF</h3>
+                <p>Informes profesionales listos para compartir.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="ia">
+                <h3>Asesor financiero con IA</h3>
+                <p>Pregunta al "Guru" y recibe consejos personalizados.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/4554/4554885.png" alt="nube">
+                <h3>Sincronización en la nube</h3>
+                <p>Accede a tus datos desde cualquier dispositivo.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2144/2144931.png" alt="tema">
+                <h3>Claro / Oscuro</h3>
+                <p>Elige el tema que prefieras, se guarda tu preferencia.</p>
+            </div>
+        </section>
+
+        <section class="screenshots">
+            <h2 style="margin-bottom: 2rem;">Capturas de pantalla</h2>
+            <!-- Aquí debes subir tus capturas (ej. desde la app) -->
+            <img src="https://via.placeholder.com/300x500?text=Gastos" alt="Vista gastos">
+            <img src="https://via.placeholder.com/300x500?text=Presupuestos" alt="Presupuestos">
+            <img src="https://via.placeholder.com/300x500?text=Gráficos" alt="Gráficos">
+            <p style="margin-top: 1rem;">(Reemplaza estas imágenes con capturas reales de MoneyFlow)</p>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <h2>Planes para todos los bolsillos</h2>
+            <p><strong>Gratis</strong> – Funciones básicas, 50 gastos, exportación CSV limitada</p>
+            <div class="price">$9.99 USD</div>
+            <p>Pago único – Acceso de por vida a todas las funciones premium:<br>
+            Exportación Excel/PDF, gastos ilimitados, gráfico de tendencia y más.</p>
+            <a href="#" class="btn">Comprar ahora</a>
+            <p style="margin-top: 1rem; font-size: 0.8rem;">* Enlace a Gumroad (próximamente)</p>
+        </section>
+
+        <section id="download" style="text-align: center; padding: 2rem;">
+            <h2>Descarga MoneyFlow hoy mismo</h2>
+            <p>Compatible con Windows 10/11 (ejecutable único).</p>
+            <a href="#" class="btn">Descargar versión gratuita</a>
+            <p style="margin-top: 1rem; font-size: 0.8rem;">Prueba la versión gratuita sin límite de tiempo.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 MoneyFlow. Desarrollado con ♥ para tus finanzas.</p>
+            <p>Contacto: <a href="mailto:soporte@moneyflow.com" style="color:#00BFA6">soporte@moneyflow.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
