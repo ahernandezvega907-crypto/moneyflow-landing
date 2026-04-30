@@ -60,7 +60,7 @@
             color: #00BFA6;
             background: linear-gradient(90deg, #00BFA6, #00E5FF);
             -webkit-background-clip: text;
-            background-clip: text;
+            background-clip: text; /* Corrección de compatibilidad */
             -webkit-text-fill-color: transparent;
         }
         .hero p {
@@ -94,7 +94,6 @@
             box-shadow: 0 6px 20px rgba(0, 191, 166, 0.4);
         }
 
-        /* Sección de Captura Unificada */
         .screenshots {
             text-align: center;
             padding: 4rem 0;
@@ -117,9 +116,6 @@
             border: 1px solid #333;
             transition: transform 0.5s ease;
         }
-        .main-screenshot:hover {
-            transform: scale(1.02);
-        }
 
         .features {
             display: grid;
@@ -141,15 +137,6 @@
         .feature-card img {
             width: 50px;
             margin-bottom: 1.5rem;
-            filter: drop-shadow(0 0 8px rgba(0, 191, 166, 0.5));
-        }
-        .feature-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-            color: #fff;
-        }
-        .feature-card p {
-            color: #888;
         }
 
         .pricing {
@@ -207,9 +194,8 @@
         <section id="screenshots" class="screenshots">
             <h2>Experiencia Visual Premium</h2>
             <div class="main-screenshot-container">
-                <img src="img/captura_completa.png" alt="Dashboard, Guru IA y Análisis de MoneyFlow" class="main-screenshot">
+                <img src="img/captura_completa.png" alt="Dashboard MoneyFlow" class="main-screenshot">
             </div>
-            <p style="color: #666; margin-top: 2rem; font-style: italic;">Una interfaz diseñada para la claridad y el control total.</p>
         </section>
 
         <section id="features" class="features">
@@ -221,18 +207,19 @@
             <div class="feature-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/1040/1040253.png" alt="gráfico">
                 <h3>Gráficos de Tendencia</h3>
-                <p>Visualiza hacia dónde va tu dinero con gráficos de pastel y barras automáticos y fáciles de entender.</p>
+                <p>Visualiza hacia dónde va tu dinero con gráficos de pastel y barras automáticos.</p>
             </div>
             <div class="feature-card">
                 <img src="https://cdn-icons-png.flaticon.com/512/3031/3031502.png" alt="exportar">
                 <h3>Informes Profesionales</h3>
-                <p>Exporta toda tu información en PDF, Excel o CSV con un solo clic. Ideal para contabilidad o control personal.</p>
+                <p>Exporta toda tu información en PDF, Excel o CSV con un solo clic.</p>
             </div>
         </section>
 
         <section id="pricing" class="pricing">
             <h2 style="font-size: 2rem;">Lleva tus ahorros al siguiente nivel</h2>
-            <div class="price">$9.99 <span style="font-size: 1rem; color: #555;">USD</span></div>
+            <!-- PRECIO ACTUALIZADO A 14.99 -->
+            <div class="price">$14.99 <span style="font-size: 1rem; color: #555;">USD</span></div>
             <p style="font-size: 1.2rem; margin-bottom: 2rem;"><strong>Pago único.</strong> Acceso de por vida a todas las funciones actuales y futuras.</p>
             <ul style="list-style: none; margin-bottom: 2rem; color: #aaa;">
                 <li>✓ IA Guru Ilimitada</li>
@@ -251,7 +238,6 @@
 
         <footer>
             <p>&copy; 2026 MoneyFlow Guru. Todos los derechos reservados.</p>
-            <p style="margin-top: 10px;">Desarrollado con precisión para tu libertad financiera.</p>
         </footer>
     </div>
 </body>
